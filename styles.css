@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /* Ensure consistent sizing across different browsers */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-color: #0a1014;
+    width: 100%;
+    min-height: 100vh;
+    /* Set minimum height to viewport height */
+    display: flex;
+    /* Use flexbox for easier layout */
+    flex-direction: column;
+}
+
+.nav {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    width: 100%;
+    /* Make nav full width */
+}
+
+.nav_mnu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Space logo and icons */
+    width: 100%;
+}
+
+.nav_icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav input {
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    background-color: #23282c;
+    padding: 12px;
+    margin-top: 10px;
+    /* Add spacing between nav and input */
+}
+
+.icon img {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.subnav {
+    display: flex;
+    overflow-x: auto;
+    /* Enable horizontal scrolling for buttons */
+    padding-top: 10px;
+    /* Add spacing */
+}
+
+.subnav .btn {
+    background-color: #23282c;
+    border-radius: 20px;
+    padding: 7px 15px;
+    width: max-content;
+    margin-left: 10px;
+    color: #8d9599;
+}
+
+.subnav .btn:hover {
+    background-color: #103529;
+    color: #21c063;
+}
+
+.archive {
+    color: #fff;
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    align-items: center;
+    /* Center vertically */
+}
+
+.archive .box {
+    width: 80%;
+    margin-left: 4%;
+}
+
+.archive .num {
+    color: #21c063;
+}
+
+.chats {
+    flex-grow: 1;
+    /* Make chats section take up remaining space */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* Enable vertical scrolling for chats */
+}
+
+.chats-box {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+}
+
+.content-img {
+    background-image: url(src/icon.png);
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chats-box-tittle {
+    color: #fff;
+    width: 80%;
+    margin-bottom: 3%;
+}
+
+.chats-box-info {
+    color: #8d9599;
+}
+
+.chat-text {
+    width: 100%;
+}
+
+.head-chat {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Space title and time */
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    /* Add padding to footer */
+}
+
+.content-btn {
+    width: 25%;
+    height: 35%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-btn img {
+    width: 100%;
+}
